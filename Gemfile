@@ -33,6 +33,9 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'byebug'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 # For Heroku/production
