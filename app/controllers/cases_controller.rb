@@ -8,6 +8,7 @@ class CasesController < ApplicationController
     rescue => e
       flash[:error] = "There was an error retrieving cases."
       log_exception(e)
+      redirect_to root_url
   end
 
   private
