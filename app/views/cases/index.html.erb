@@ -1,5 +1,8 @@
+<%= link_to "Back", root_url %>
 <ul id="cases_list">
-  <li></li>
-  <li></li>
-  <li></li>
+  <% if @cases.present? %>
+    <%= render partial: "case_entry", collection: @cases %>
+  <% else %>
+    No cases found.
+  <% end %>
 </ul>

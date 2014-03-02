@@ -8,7 +8,9 @@ feature "List cases" do
 
   scenario "User displays cases" do
     visit root_url
-    find("#menu").click_on("List cases in first filter")
+    VCR.use_cassette("filters_and_cases") do
+      find("#menu").click_on("List cases in first filter")
+    end
     expect(find("#cases_list")).to have_css('li', count: 3)
   end
 end
