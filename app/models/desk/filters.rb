@@ -1,7 +1,7 @@
 module Desk
   class Filters
     extend Forwardable
-    def_delegators :@filters, :size, :each
+    def_delegators :@filters, :size, :each, :to_ary
     include Enumerable
 
     def self.retrieve
@@ -9,20 +9,15 @@ module Desk
       self.new(client.filters.entries)
     end
 
-    def initialize(filter_data)
-      @filters = objectify_filters(filter_data)
-    end
-
-    def count
-      filters.count
+    def initialize(filters_data)
+      @filters = objectify_filters(filters_data)
     end
 
     private
-    attr_accessor :filters
 
-    def objectify_filters(filter_data)
-      filter_data.map do |filter|
-        Filter.new(filter.name, filter.cases)
+    def objectify_filters(filters_data)
+      filters_data.map do |filter|
+        Desk::Filter.new(filter.name, filter.cases)
       end
     end
   end
