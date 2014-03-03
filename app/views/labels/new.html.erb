@@ -1,5 +1,15 @@
 <%= form_tag('/labels') do %>
-  <%= label_tag "label", "New Label" %>
-  <%= text_field_tag "label", "prove it" %>
-  <%= submit_tag "Create" %>
+  <table>
+    <tr>
+      <td>
+        <%= label_tag "label", "New Label" %>
+      </td>
+      <td>
+        <%= text_field_tag "label", "prove it" %>
+      </td>
+      <td>
+        <%= submit_tag "Create" %>
+      </td>
+    </tr>
+  </table>
 <% end %>

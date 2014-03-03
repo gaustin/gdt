@@ -11,6 +11,6 @@ feature "List labels" do
     VCR.use_cassette("labels") do
       find("#menu").click_on("List labels")
     end
-    expect(find("#labels_list")).to have_css('li', count: 7)
+    expect(find("#labels_list")).to have_css('tr', count: 8)
   end
 end
