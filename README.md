@@ -12,5 +12,6 @@ This application uses SQLite locally and Postgres on the server. Though at this 
 
 More later.
 
-### Next extensions (things I punted on)
+### Next extensions and improvements (things I punted on)
 * ETags and caching in general
+* Controller specs. I think I have good feature level coverage so I don't feel _too_ bad about this.

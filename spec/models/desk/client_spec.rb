@@ -15,12 +15,16 @@ describe Desk::Client do
 
   describe "delegation" do
     let(:client) { Desk::Client.new(double("DeskApi", new: nil)) }
-    it "can retrieve labels" do
+    it "can access labels" do
       expect(client.respond_to?(:labels)).to be_true
     end
 
-    it "can retrieve filters" do
+    it "can access filters" do
       expect(client.respond_to?(:filters)).to be_true
+    end
+
+    it "can access cases" do
+      expect(client.respond_to?(:cases)).to be_true
     end
   end
 end

@@ -1,8 +1,16 @@
-<%= link_to "Back", root_url %>
-<ul id="cases_list">
-  <% if @cases.present? %>
-    <%= render partial: "case_entry", collection: @cases %>
-  <% else %>
-    <li>No cases found.</li>
-  <% end %>
-</ul>
+<table id="cases_list">
+  <thead>
+    <tr>
+      <td>Subject</td><td>Status</td><td>Type</td><td>Priority</td><td>Labels</td><td>Label Actions</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% if @cases.present? %>
+      <%= render partial: "case_entry", collection: @cases %>
+    <% else %>
+      <tr>
+        <td colspan="6">No cases found.</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

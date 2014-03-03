@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://nonesuch.desk.com/api/v2/cases/1
+    body:
+      encoding: UTF-8
+      string: "{\"label_action\":\"append\",\"labels\":[\"Frodolicious\"]}"
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="c5dd6bdfec59413989137cf903cad008",
+        oauth_signature="fa7amWiA8YVNp1%2B3j1KPbfy12E8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393819858", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:10:59 GMT
+      Etag:
+      - "\"e0ebe3827ee15377f7cbba07be36ea09\""
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '59'
+      X-Rate-Limit-Reset:
+      - '1'
+      X-Request-Id:
+      - 24db39693d330b9df2ec7b58bcd6ed48
+      X-Runtime:
+      - '0.194579'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1415'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks for trying Desk.com.
+        We hope your trial goes well and you decide to use Desk.com to wow your customers.
+        Please let us know if there is anything we can do to make your experience
+        better. In the meantime see the tips below for getting started...\",\"subject\":\"Welcome
+        to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Frodolicious\"],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:10:59Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:10:59 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/cases/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="98daab165733a42fff236e323ff088d5",
+        oauth_signature="obsExijpLH4P2UeAtVaO8gmOfbk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393819859", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:10:59 GMT
+      Etag:
+      - "\"e0ebe3827ee15377f7cbba07be36ea09\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '58'
+      X-Rate-Limit-Reset:
+      - '1'
+      X-Request-Id:
+      - 5b8188a2f226d91ea4080f1aa13d42d1
+      Content-Length:
+      - '1415'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks for trying Desk.com.
+        We hope your trial goes well and you decide to use Desk.com to wow your customers.
+        Please let us know if there is anything we can do to make your experience
+        better. In the meantime see the tips below for getting started...\",\"subject\":\"Welcome
+        to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Frodolicious\"],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:10:59Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:11:00 GMT
+recorded_with: VCR 2.8.0

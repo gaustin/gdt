@@ -24,7 +24,7 @@ feature 'Create label' do
     VCR.use_cassette('duplicate_label') do
       click_on("Create")
     end
-    expect(current_path).to eq(labnels_path)
+    expect(current_path).to eq(labels_path)
     expect(page).to have_content("name is taken")
   end
 end

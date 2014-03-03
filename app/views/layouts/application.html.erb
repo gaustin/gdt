@@ -7,6 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul id="menu">
+    <% unless request.fullpath == root_path %>
+      <li><%= link_to "Home", root_url %></li>
+    <% end %>
+    <% unless request.fullpath == cases_path %>
+      <li><%= link_to "List cases in first filter", cases_url %></li>
+    <% end %>
+    <% unless request.fullpath == labels_path %>
+      <li><%= link_to "List labels", labels_url %></li>
+    <% end %>
+    <% unless request.fullpath == new_label_path %>
+      <li><%= link_to "Create label", new_label_url %></li>
+    <% end %>
+  </ul>
+
   <% flash.each do |name, msg| -%>
     <%= content_tag :div, msg, class: name %>
   <% end -%>

@@ -1,0 +1,1104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="294b55a5c873d2bcd90ceff200f41121",
+        oauth_signature="wE682XKpQfYkUGzNDl%2BOc5LUmPw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821599", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:00 GMT
+      Etag:
+      - "\"caaefedb46f29fb11f396d072276c8ca\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '59'
+      X-Rate-Limit-Reset:
+      - '60'
+      X-Request-Id:
+      - 8725c69271533754cbe8e3c56f9078bc
+      Content-Length:
+      - '2930'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898207/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898208\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898208/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898209\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898209/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898210\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898210/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898211\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898211/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898212\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898212/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898213\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898213/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898214\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898214/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898215\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898215/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898216\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898216/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:00 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters/1898207/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="d7107937d3e5c9ebe432817a63118f39",
+        oauth_signature="bjug5oxU%2BcyqieloTz288bM2QDI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821600", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:01 GMT
+      Etag:
+      - "\"7db66dee5d1585058c6bf89afeed97e1\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '58'
+      X-Rate-Limit-Reset:
+      - '59'
+      X-Request-Id:
+      - 94e1654673e3e7b24a44fa845facef52
+      Content-Length:
+      - '4424'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":3,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks
+        for trying Desk.com. We hope your trial goes well and you decide to use Desk.com
+        to wow your customers. Please let us know if there is anything we can do to
+        make your experience better. In the meantime see the tips below for getting
+        started...\",\"subject\":\"Welcome to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Pizza\"],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:36:54Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        You just sent your first case in Desk.com.\\n\\n Here's your new support email
+        address: support@nonesuch.desk-mail.com\\n\\n Tip: Try it out. Send an email
+        to that address to see what a customer would experience.\\n Then Update &
+        Resolve to see what yo\",\"subject\":\"Your test case made it!\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"new\",\"type\":\"email\",\"labels\":[\"Frodolicious\"],\"language\":\"en\",\"active_at\":null,\"created_at\":\"2014-03-01T18:38:04Z\",\"updated_at\":\"2014-03-03T04:08:08Z\",\"received_at\":\"2014-03-01T18:38:05Z\",\"first_opened_at\":null,\"opened_at\":null,\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161134577\",\"class\":\"customer\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":\"Desk.com
+        is a single place to keep track of all your customers online correspondence
+        (email, chats), social media conversation (Facebook, Twitter), and offline
+        contacts (phone).\\n\\nRECORD PHONE - In the upper right there is a New Case
+        button, this is h\",\"subject\":\"Welcome to Desk.com\",\"priority\":9,\"locked_until\":null,\"description\":null,\"status\":\"new\",\"type\":\"phone\",\"labels\":[\"Example\"],\"language\":\"en\",\"active_at\":null,\"created_at\":\"2014-03-01T18:34:55Z\",\"updated_at\":\"2014-03-01T18:34:55Z\",\"received_at\":\"2014-03-01T18:34:55Z\",\"first_opened_at\":null,\"opened_at\":null,\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:01 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="b2c6c18331b467710338f21854b12fd2",
+        oauth_signature="yDGyQ5QQ1ZrnCg5ARdO7zxUtQOQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821601", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:01 GMT
+      Etag:
+      - "\"caaefedb46f29fb11f396d072276c8ca\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '57'
+      X-Rate-Limit-Reset:
+      - '59'
+      X-Request-Id:
+      - bf6aeb295cf3918a3b81b01acfb0b080
+      Content-Length:
+      - '2930'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898207/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898208\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898208/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898209\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898209/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898210\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898210/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898211\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898211/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898212\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898212/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898213\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898213/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898214\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898214/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898215\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898215/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898216\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898216/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:02 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="6548fc6c43631f13e02b051285e48b31",
+        oauth_signature="aSww3NSWZsGkkF99HOSOGxy2TZY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821602", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:02 GMT
+      Etag:
+      - "\"caaefedb46f29fb11f396d072276c8ca\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '56'
+      X-Rate-Limit-Reset:
+      - '58'
+      X-Request-Id:
+      - 04bb426016a50de166892123c20414e0
+      Content-Length:
+      - '2930'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898207/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898208\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898208/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898209\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898209/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898210\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898210/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898211\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898211/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898212\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898212/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898213\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898213/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898214\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898214/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898215\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898215/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898216\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898216/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:02 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters/1898207/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="4e118e6ca438bbecf559413d198ce066",
+        oauth_signature="wpFm4aRKlwttnQjs2FfLsaCHf9k%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821602", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:03 GMT
+      Etag:
+      - "\"7db66dee5d1585058c6bf89afeed97e1\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '55'
+      X-Rate-Limit-Reset:
+      - '57'
+      X-Request-Id:
+      - 1d2e742a62f4c79a460d6d7dd784f2a2
+      Content-Length:
+      - '4424'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":3,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks
+        for trying Desk.com. We hope your trial goes well and you decide to use Desk.com
+        to wow your customers. Please let us know if there is anything we can do to
+        make your experience better. In the meantime see the tips below for getting
+        started...\",\"subject\":\"Welcome to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Pizza\"],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:36:54Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        You just sent your first case in Desk.com.\\n\\n Here's your new support email
+        address: support@nonesuch.desk-mail.com\\n\\n Tip: Try it out. Send an email
+        to that address to see what a customer would experience.\\n Then Update &
+        Resolve to see what yo\",\"subject\":\"Your test case made it!\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"new\",\"type\":\"email\",\"labels\":[\"Frodolicious\"],\"language\":\"en\",\"active_at\":null,\"created_at\":\"2014-03-01T18:38:04Z\",\"updated_at\":\"2014-03-03T04:08:08Z\",\"received_at\":\"2014-03-01T18:38:05Z\",\"first_opened_at\":null,\"opened_at\":null,\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161134577\",\"class\":\"customer\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":\"Desk.com
+        is a single place to keep track of all your customers online correspondence
+        (email, chats), social media conversation (Facebook, Twitter), and offline
+        contacts (phone).\\n\\nRECORD PHONE - In the upper right there is a New Case
+        button, this is h\",\"subject\":\"Welcome to Desk.com\",\"priority\":9,\"locked_until\":null,\"description\":null,\"status\":\"new\",\"type\":\"phone\",\"labels\":[\"Example\"],\"language\":\"en\",\"active_at\":null,\"created_at\":\"2014-03-01T18:34:55Z\",\"updated_at\":\"2014-03-01T18:34:55Z\",\"received_at\":\"2014-03-01T18:34:55Z\",\"first_opened_at\":null,\"opened_at\":null,\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:03 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="804f96aa07481228504fdb19267282e4",
+        oauth_signature="6CqS%2BBB%2FZItaw5fixGSQ8PWfFz8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821603", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:04 GMT
+      Etag:
+      - "\"13938201483448668\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '54'
+      X-Rate-Limit-Reset:
+      - '56'
+      X-Request-Id:
+      - 3e5586d3291cfe1c5bbcf44e94b38f56
+      Content-Length:
+      - '2074'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"Frodolicious\",\"description\":\"Frodolicious\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685940\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"nachos\",\"description\":\"nachos
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685944\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Pizza\",\"description\":\"Pizza
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685850\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:04 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="ae2c6f55fd3ab8c6f43517031a9c3e1d",
+        oauth_signature="ulZCVQcYVSeI78jRoW4qTS%2FyUF0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821604", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:05 GMT
+      Etag:
+      - "\"13938201483448668\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '53'
+      X-Rate-Limit-Reset:
+      - '55'
+      X-Request-Id:
+      - bf2f08fcb697e87f7de50eb5e8fbda42
+      Content-Length:
+      - '2074'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"Frodolicious\",\"description\":\"Frodolicious\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685940\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"nachos\",\"description\":\"nachos
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685944\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Pizza\",\"description\":\"Pizza
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685850\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:05 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="e30e48c219e3c70c51dd1f8fa14da699",
+        oauth_signature="bbsskX6uK%2FMcQZcbijxkmQioQ0E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821605", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:05 GMT
+      Etag:
+      - "\"13938201483448668\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '52'
+      X-Rate-Limit-Reset:
+      - '55'
+      X-Request-Id:
+      - c884c5b3ccab23e2a5428adf54bb455d
+      Content-Length:
+      - '2074'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"Frodolicious\",\"description\":\"Frodolicious\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685940\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"nachos\",\"description\":\"nachos
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685944\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Pizza\",\"description\":\"Pizza
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685850\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:05 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/cases/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="9fe13555d4810aa95e43890cc423b93b",
+        oauth_signature="UDTI5tDLtuZtErws7g%2FaHiPtr4g%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821605", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:06 GMT
+      Etag:
+      - "\"3ef3b6af4f1b554be6193c838260e892\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '51'
+      X-Rate-Limit-Reset:
+      - '54'
+      X-Request-Id:
+      - 84ae371c71adf3d7bbc39ef190f6f22d
+      Content-Length:
+      - '1408'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks for trying Desk.com.
+        We hope your trial goes well and you decide to use Desk.com to wow your customers.
+        Please let us know if there is anything we can do to make your experience
+        better. In the meantime see the tips below for getting started...\",\"subject\":\"Welcome
+        to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[\"Pizza\"],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:36:54Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:06 GMT
+- request:
+    method: patch
+    uri: https://nonesuch.desk.com/api/v2/cases/1
+    body:
+      encoding: UTF-8
+      string: "{\"label_action\":\"replace\",\"labels\":[]}"
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="dc55d58f2ad1c3ff3ccadded78ce350e",
+        oauth_signature="ndy8zZdp4AFjYeJFZHQReVIgw3o%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821606", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:07 GMT
+      Etag:
+      - "\"1ea7947d991a1dcdb2122a8d3f7b3921\""
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '50'
+      X-Rate-Limit-Reset:
+      - '53'
+      X-Request-Id:
+      - 16bd7c2fcb4f2deb4b363b88d9956737
+      X-Runtime:
+      - '0.320459'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1401'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks for trying Desk.com.
+        We hope your trial goes well and you decide to use Desk.com to wow your customers.
+        Please let us know if there is anything we can do to make your experience
+        better. In the meantime see the tips below for getting started...\",\"subject\":\"Welcome
+        to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:40:07Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:07 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/cases/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="2c672034f7916217a978c9efe39ab577",
+        oauth_signature="WTqutvCn5RrbahFdznNrnvpULy8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821607", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:07 GMT
+      Etag:
+      - "\"1ea7947d991a1dcdb2122a8d3f7b3921\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '49'
+      X-Rate-Limit-Reset:
+      - '53'
+      X-Request-Id:
+      - 0157824b7a36e61e53b971a2de555443
+      Content-Length:
+      - '1401'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks for trying Desk.com.
+        We hope your trial goes well and you decide to use Desk.com to wow your customers.
+        Please let us know if there is anything we can do to make your experience
+        better. In the meantime see the tips below for getting started...\",\"subject\":\"Welcome
+        to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:40:07Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:08 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="ab16f0bcfa3f52b6992504a4f752b3bc",
+        oauth_signature="XgcO7bhn0cJrl3cZXTOu0l6IdzM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821608", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:08 GMT
+      Etag:
+      - "\"caaefedb46f29fb11f396d072276c8ca\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '48'
+      X-Rate-Limit-Reset:
+      - '52'
+      X-Request-Id:
+      - 2005ad38c6cc0a48f40336fdb97aa405
+      Content-Length:
+      - '2930'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898207/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898208\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898208/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898209\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898209/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898210\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898210/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898211\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898211/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898212\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898212/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898213\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898213/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898214\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898214/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898215\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898215/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898216\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898216/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:08 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="8129412aa71c2ee5e36cfcd813abcafb",
+        oauth_signature="YGHW1pO69om6ZVZGnJVo8nYv9hc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821608", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:09 GMT
+      Etag:
+      - "\"caaefedb46f29fb11f396d072276c8ca\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '47'
+      X-Rate-Limit-Reset:
+      - '51'
+      X-Request-Id:
+      - 456507cf0be66ec13609efa2521db20f
+      Content-Length:
+      - '2930'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Inbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":1,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898207/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":2,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898208\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898208/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":3,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898209\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898209/cases\",\"class\":\"case\"}}},{\"name\":\"Unassigned
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":4,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898210\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898210/cases\",\"class\":\"case\"}}},{\"name\":\"My
+        Group's Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":5,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898211\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898211/cases\",\"class\":\"case\"}}},{\"name\":\"All
+        Unresolved Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":6,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898212\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898212/cases\",\"class\":\"case\"}}},{\"name\":\"Recently
+        Updated Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":7,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898213\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898213/cases\",\"class\":\"case\"}}},{\"name\":\"Aging
+        Pending Cases (>3 Days)\",\"sort_field\":\"priority\",\"sort_direction\":\"desc\",\"position\":8,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898214\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898214/cases\",\"class\":\"case\"}}},{\"name\":\"Outbox\",\"sort_field\":\"updated_at\",\"sort_direction\":\"desc\",\"position\":13,\"active\":true,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898215\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898215/cases\",\"class\":\"case\"}}},{\"name\":\"Deleted
+        Cases\",\"sort_field\":\"updated_at\",\"sort_direction\":\"asc\",\"position\":14,\"active\":false,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898216\",\"class\":\"filter\"},\"group\":null,\"user\":null,\"cases\":{\"href\":\"/api/v2/filters/1898216/cases\",\"class\":\"case\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:09 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/filters/1898207/cases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="126192cd09d94b5c988518d58bca90d1",
+        oauth_signature="a6WbawkLXrpPvDjdabw04lC1RIM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821609", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:10 GMT
+      Etag:
+      - "\"6c1043288ae9a12226f2ea219a6e5a28\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '46'
+      X-Rate-Limit-Reset:
+      - '50'
+      X-Request-Id:
+      - 20ab99862d365a203935cd53540ef922
+      Content-Length:
+      - '4417'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":3,\"_links\":{\"self\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/filters/1898207/cases?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"id\":1,\"external_id\":null,\"blurb\":\"Thanks
+        for trying Desk.com. We hope your trial goes well and you decide to use Desk.com
+        to wow your customers. Please let us know if there is anything we can do to
+        make your experience better. In the meantime see the tips below for getting
+        started...\",\"subject\":\"Welcome to Desk.com\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"open\",\"type\":\"email\",\"labels\":[],\"language\":\"en\",\"active_at\":\"2014-03-02T19:45:53Z\",\"created_at\":\"2014-03-01T18:34:54Z\",\"updated_at\":\"2014-03-03T04:40:07Z\",\"received_at\":\"2014-03-01T18:34:54Z\",\"first_opened_at\":\"2014-03-02T19:45:53Z\",\"opened_at\":\"2014-03-02T19:45:53Z\",\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/1\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/1/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/1/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/1/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/1/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/1/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/1/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":3,\"external_id\":null,\"blurb\":\"Hooray!
+        You just sent your first case in Desk.com.\\n\\n Here's your new support email
+        address: support@nonesuch.desk-mail.com\\n\\n Tip: Try it out. Send an email
+        to that address to see what a customer would experience.\\n Then Update &
+        Resolve to see what yo\",\"subject\":\"Your test case made it!\",\"priority\":4,\"locked_until\":null,\"description\":null,\"status\":\"new\",\"type\":\"email\",\"labels\":[\"Frodolicious\"],\"language\":\"en\",\"active_at\":null,\"created_at\":\"2014-03-01T18:38:04Z\",\"updated_at\":\"2014-03-03T04:08:08Z\",\"received_at\":\"2014-03-01T18:38:05Z\",\"first_opened_at\":null,\"opened_at\":null,\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/3\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/3/message\",\"class\":\"email\"},\"customer\":{\"href\":\"/api/v2/customers/161134577\",\"class\":\"customer\"},\"assigned_user\":null,\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/3/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/3/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/3/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/3/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/3/attachments\",\"class\":\"attachment\",\"count\":0}}},{\"id\":2,\"external_id\":null,\"blurb\":\"Desk.com
+        is a single place to keep track of all your customers online correspondence
+        (email, chats), social media conversation (Facebook, Twitter), and offline
+        contacts (phone).\\n\\nRECORD PHONE - In the upper right there is a New Case
+        button, this is h\",\"subject\":\"Welcome to Desk.com\",\"priority\":9,\"locked_until\":null,\"description\":null,\"status\":\"new\",\"type\":\"phone\",\"labels\":[\"Example\"],\"language\":\"en\",\"active_at\":null,\"created_at\":\"2014-03-01T18:34:55Z\",\"updated_at\":\"2014-03-01T18:34:55Z\",\"received_at\":\"2014-03-01T18:34:55Z\",\"first_opened_at\":null,\"opened_at\":null,\"first_resolved_at\":null,\"resolved_at\":null,\"custom_fields\":{},\"_links\":{\"self\":{\"href\":\"/api/v2/cases/2\",\"class\":\"case\"},\"message\":{\"href\":\"/api/v2/cases/2/message\",\"class\":\"phone\"},\"customer\":{\"href\":\"/api/v2/customers/161133857\",\"class\":\"customer\"},\"assigned_user\":{\"href\":\"/api/v2/users/21797453\",\"class\":\"user\"},\"assigned_group\":{\"href\":\"/api/v2/groups/395364\",\"class\":\"group\"},\"locked_by\":null,\"history\":{\"href\":\"/api/v2/cases/2/history\",\"class\":\"history\"},\"replies\":{\"href\":\"/api/v2/cases/2/replies\",\"class\":\"reply\",\"count\":1},\"draft\":{\"href\":\"/api/v2/cases/2/replies/draft\",\"class\":\"reply\"},\"notes\":{\"href\":\"/api/v2/cases/2/notes\",\"class\":\"note\",\"count\":0},\"attachments\":{\"href\":\"/api/v2/cases/2/attachments\",\"class\":\"attachment\",\"count\":0}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:10 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="eadd9ff76f5c0c77b3788c82430ba153",
+        oauth_signature="YDQio6lCwH0eMx8tsexGIUL5Qr4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821610", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:10 GMT
+      Etag:
+      - "\"13938201483448668\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '45'
+      X-Rate-Limit-Reset:
+      - '50'
+      X-Request-Id:
+      - fad9dcebde3dcb45dab65c0d19141688
+      Content-Length:
+      - '2074'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"Frodolicious\",\"description\":\"Frodolicious\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685940\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"nachos\",\"description\":\"nachos
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685944\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Pizza\",\"description\":\"Pizza
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685850\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:10 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="7f3c7b81cd39354271ebe7b694b2de2d",
+        oauth_signature="qoPb5jKM1nJzjzLkomennb%2BnNA8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821610", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:11 GMT
+      Etag:
+      - "\"13938201483448668\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '44'
+      X-Rate-Limit-Reset:
+      - '49'
+      X-Request-Id:
+      - 611e8426b213917a5f22503f1346f0c0
+      Content-Length:
+      - '2074'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"Frodolicious\",\"description\":\"Frodolicious\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685940\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"nachos\",\"description\":\"nachos
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685944\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Pizza\",\"description\":\"Pizza
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685850\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:11 GMT
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="64b11b2f618f426dd2d2c04c821afd98",
+        oauth_signature="PJEXdk4M8l4jcsPRiXNf8BkQ%2BuA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393821611", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 03 Mar 2014 04:40:12 GMT
+      Etag:
+      - "\"13938201483448668\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '43'
+      X-Rate-Limit-Reset:
+      - '48'
+      X-Request-Id:
+      - d7ea632de8874fad3cedb0b6dc65afa7
+      Content-Length:
+      - '2074'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":10,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"Frodolicious\",\"description\":\"Frodolicious\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685940\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"nachos\",\"description\":\"nachos
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685944\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Pizza\",\"description\":\"Pizza
+        created by silly application\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685850\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Mon, 03 Mar 2014 04:40:12 GMT
+recorded_with: VCR 2.8.0

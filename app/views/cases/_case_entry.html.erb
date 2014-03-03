@@ -1,1 +1,14 @@
-<li><%= case_entry.subject %></li>
+<tr id=<%="case-#{case_entry.id}"%>>
+  <td><%= case_entry.subject %></td>
+  <td><%= case_entry.status %></td>
+  <td><%= case_entry.type %></td>
+  <td><%= case_entry.priority %></td>
+  <td id=<%= "case-#{case_entry.id}-labels" %>><%= case_entry.labels.join(", ") %></td>
+  <td>
+    <%= form_tag("/cases/#{case_entry.id}", method: "PUT") do %>
+      <%= select_tag("label", options_for_select(label_names)) %>
+      <%= submit_tag "Append", name: "append" %>
+      <%= submit_tag "Clear", name: "clear" %>
+    <% end %>
+  </td>
+</tr>

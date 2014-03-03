@@ -1,8 +1,16 @@
-<%= link_to "Back", root_url %>
-<ul id="labels_list">
-  <% if @labels.present? %>
-    <%= render partial: "label", collection: @labels %>
-  <% else %>
-    <li>No labels found.</li>
-  <% end %>
-</ul>
+<table id="labels_list">
+  <thead>
+    <tr>
+      <th>Name</th><th>Description</th><th>Enabled?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if @labels.present? %>
+      <%= render partial: "label", collection: @labels %>
+    <% else %>
+      <tr>
+        <td colspan="3">No labels found.</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

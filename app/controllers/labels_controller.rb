@@ -14,6 +14,7 @@ class LabelsController < ApplicationController
     Desk::Label.create(params[:label])
     redirect_to labels_url
   rescue DeskApi::Error::UnprocessableEntity => e
+    # TODO: DeskApi exceptions should be wrapped and error messages parsed out.
     log_exception(e)
     messages = e.errors.map {|key, values| "#{key} is #{values.join(", ")}"}
     message = "Error creating label: #{messages.join("; ")}"
