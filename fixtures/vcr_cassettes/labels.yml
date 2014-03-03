@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nonesuch.desk.com/api/v2/labels
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - desk.com Ruby Gem v0.5.6
+      Authorization:
+      - OAuth oauth_consumer_key="yvrqW68oBI403I5surFL", oauth_nonce="9f52d155a394ad540092891e1fe8b7b4",
+        oauth_signature="KjQA4JzGdWarRfsAv1s8ptz9T%2B8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1393802384", oauth_token="KDNVoUTNOUFvbLNfmxX6", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 02 Mar 2014 23:19:45 GMT
+      Etag:
+      - "\"13937983234825590\""
+      Status:
+      - 200 OK
+      Vary:
+      - X-AppVersion
+      X-Appversion:
+      - '15.99'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Remaining:
+      - '59'
+      X-Rate-Limit-Reset:
+      - '15'
+      X-Request-Id:
+      - 8715b1df8f23010070d49da7a2f6a9dd
+      Content-Length:
+      - '1512'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\"total_entries\":7,\"_links\":{\"self\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"first\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"last\":{\"href\":\"/api/v2/labels?page=1&per_page=50\",\"class\":\"page\"},\"previous\":null,\"next\":null},\"_embedded\":{\"entries\":[{\"name\":\"Abandoned
+        Chats\",\"description\":\"Abandoned Chats\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685165\",\"class\":\"label\"}}},{\"name\":\"Escalated\",\"description\":\"Escalated\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685164\",\"class\":\"label\"}}},{\"name\":\"Example\",\"description\":\"Example\",\"enabled\":true,\"types\":[\"case\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685162\",\"class\":\"label\"}}},{\"name\":\"Feedback\",\"description\":\"Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685160\",\"class\":\"label\"}}},{\"name\":\"More
+        Info\",\"description\":\"More Info\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685161\",\"class\":\"label\"}}},{\"name\":\"Negative
+        Feedback\",\"description\":\"Negative Feedback\",\"enabled\":true,\"types\":[\"case\",\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685163\",\"class\":\"label\"}}},{\"name\":\"Sample
+        Macros\",\"description\":\"Sample Macros\",\"enabled\":true,\"types\":[\"macro\"],\"color\":\"default\",\"_links\":{\"self\":{\"href\":\"/api/v2/labels/1685159\",\"class\":\"label\"}}}]}}"
+    http_version: 
+  recorded_at: Sun, 02 Mar 2014 23:19:45 GMT
+recorded_with: VCR 2.8.0

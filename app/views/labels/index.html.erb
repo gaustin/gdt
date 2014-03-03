@@ -1,0 +1,8 @@
+<%= link_to "Back", root_url %>
+<ul id="labels_list">
+  <% if @labels.present? %>
+    <%= render partial: "label", collection: @labels %>
+  <% else %>
+    <li>No labels found.</li>
+  <% end %>
+</ul>

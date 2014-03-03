@@ -28,7 +28,7 @@ describe Desk::Filters do
       end
     end
 
-    context "no label data" do
+    context "no filter data" do
       it "generates no filters" do
         filters = Desk::Filters.new([])
         expect(filters.count).to eq(0)

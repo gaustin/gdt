@@ -1,7 +1,7 @@
 module Desk
   class Client
     extend Forwardable
-    def_delegators :@client, :filters
+    def_delegators :@client, :filters, :labels
 
     TOKEN = ENV['DESK_TOKEN']
     TOKEN_SECRET = ENV['DESK_TOKEN_SECRET']
