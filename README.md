@@ -3,7 +3,7 @@
 ### Usage
 * `bundle install`
 * Export your single-user OAuth credentials as environment variables.
-* Set the correct Desk.com subdomain in `config/application.
+* Set the correct Desk.com subdomain in `config/application.rb`
 * For test and development the Rails secret is generated junk. On production, you'll need to export something appropriate as `SECRET_TOKEN`.
 * Run tests: `rspec`
 
