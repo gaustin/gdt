@@ -6,4 +6,23 @@ class LabelsController < ApplicationController
     log_exception(e)
     redirect_to root_url
   end
+
+  def new
+  end
+
+  def create
+    Desk::Label.create(params[:label])
+    redirect_to labels_url
+  rescue DeskApi::Error::UnprocessableEntity => e
+    log_exception(e)
+    messages = e.errors.map {|key, values| "#{key} is #{values.join(", ")}"}
+    message = "Error creating label: #{messages.join("; ")}"
+    logger.error(message)
+    flash[:error] = message
+    redirect_to labels_url
+  rescue => e
+    log_exception(e)
+    flash[:error] = "There was an unexpected error while creating the label"
+    redirect_to root_url
+  end
 end
